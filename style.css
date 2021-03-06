@@ -1,0 +1,197 @@
+body {margin: 0;padding: 0;}
+li {list-style-type: none;}
+
+.page {
+    display: flex;
+    width: 1440px;
+    background-color:rgb(225, 225, 225);
+}
+
+
+
+/* --------------- меню слева --------------- */
+.sidebar {
+    width: 255px;
+    height: 608px;
+    background-color:#363740;
+    color: #fff;
+}
+
+.logoName{
+    font-size: 19px;
+    color:#A4A6B3;
+    padding: 41px;
+    align-items:center;
+}
+
+
+.blockMenu{
+    color: #A4A6B3;
+    padding: 18px;
+    font-size: 16px;
+}
+
+.blockMenu:hover{
+    color: #DDE2FF;
+    background-color:#9FA2B4;
+    border-left: 2px solid #DDE2FF;;
+
+}
+
+
+/* --------------- заголовок сверху --------------- */
+.header{
+    display: inline-flex;
+    width:1185px;
+    height: 1234px;
+    margin: 30px 0px 30px 30px;
+
+}
+
+
+.block {
+    display: inline-flex;
+    text-align: center;
+    width: 1122px;
+  }
+  .block div {
+    flex: 10%;
+    display: inline-flex;
+    height: 50px;
+    background: yellow;
+  }
+  .block div:nth-child(2) {
+    flex: 10%;
+    display: inline-flex;
+    background: orange;
+    justify-content: flex-end;
+  }
+
+
+.blockName{
+    color: #252733;
+    font-size: 24px;
+    background: rgb(225, 151, 151);
+    width: 1122px;
+    height: 44px;
+}
+  
+.userName{
+    font-size: 14px;
+    color:#252733;
+}
+.userAvatar{
+    border: 1.5px solid #DFE0EB;
+    border-radius:50% ;
+}
+
+/* --------------- карты сверху --------------- */
+
+.fonCards {
+    display: flex;
+    text-align: center;
+    font-size: 19px;
+    color:#9FA2B4;
+  }
+  .fonCards li{
+      font-size: 40px;
+    color:#252733;
+
+  }
+.fonCards div {
+    /* flex: 0 0 auto; */
+    /* width: auto; */
+    width:254px;
+    height: 134px;
+    margin-top: 58px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    border: 1px solid #DFE0EB;
+
+  }
+
+  .fonCards div:hover {
+    border: 1px solid #3751FF;
+
+  }
+
+.card + .card{
+    margin-left: 30px;
+  }
+
+
+  /* --------------- schedule --------------- */
+.schedule{
+    margin-top: 30px;
+    width:1122px;
+    height: 546px;
+    border-radius: 8px;
+    border: 1px solid #DFE0EB;
+    background: #FFFFFF;
+    display: inline-flex;
+    text-align: center;
+
+}
+
+    /*  график */
+  .field1 {
+    display: inline-flex;
+    width: 780px;
+  }
+
+   /* инфо справа */
+  .field2 {
+    width: 342px;
+    display: inline-flex;
+    justify-content: center;
+    font-size: 16px;
+    color:#9FA2B4;
+  }
+  .field2 li {
+      font-size: 24px;
+      color:#252733;
+  }
+
+.field2Info {
+    display: flex;
+    width: 342px;
+    /* padding-top: 32px; */
+    height: 114px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-left: 1px solid #DFE0EB ;
+    border-bottom: 1px solid #DFE0EB ;
+}
+
+/* --------------- bottom info ---------------  */
+
+.bottomInofos {
+    display: flex;
+    text-align: center;
+    font-size: 19px;
+    color:#9FA2B4;
+  }
+  .bottomInofos li{
+      font-size: 40px;
+    color:#252733;
+
+  }
+.bottomInofos div {
+    /* flex: 0 0 auto; */
+    /* width: auto; */
+    width:546px;
+    height: 336px;
+    margin-top: 30px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    border: 1px solid #DFE0EB;
+
+  }
+
+  .bottomInofos div:hover {
+    border: 1px solid #3751FF;
+  }
+
+  .InfoPos + .InfoPos {
+  margin-left: 30px;
+  }
