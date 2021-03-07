@@ -33,8 +33,9 @@ li {list-style-type: none;}
 
 .blockMenu:hover{
     color: #DDE2FF;
+    border-left: 2px solid #DDE2FF;
     background-color:#9FA2B4;
-    border-left: 2px solid #DDE2FF;;
+    opacity: 0.5;
 
 }
 
@@ -155,7 +156,6 @@ li {list-style-type: none;}
 .field2Info {
     display: flex;
     width: 342px;
-    /* padding-top: 32px; */
     height: 114px;
     flex-wrap: wrap;
     flex-direction: column;
@@ -165,17 +165,12 @@ li {list-style-type: none;}
 
 /* --------------- bottom info ---------------  */
 
-.bottomInofos {
+.bottomBlockInofo {
     display: flex;
-    text-align: center;
-    font-size: 19px;
-    color:#9FA2B4;
   }
-  .bottomInofos li{
-    font-size: 40px;
-    color:#252733;
 
-  }
+
+  /* настройка нижн блоков*/
 .InfoPos {
     /* flex: 0 0 auto; */
     /* width: auto; */
@@ -188,37 +183,115 @@ li {list-style-type: none;}
     color: #252733;
     font-size: 19px;
     text-align: left; 
-
   }
 
-.InfoPos li{
-  font-size: 12px;
-  color: #9FA2B4;
-}
 
-.InfoPos span {
-  font-size: 12px;
-  color: #252733;
-}
+
 
   .InfoPos + .InfoPos {
   margin-left: 30px;
   }
 
 
-  .ticket {
-    display: flex;
-    width: 546;
-    height: 58px;
-    /* padding-top: 32px; */
-    flex-wrap: wrap;
-    flex-direction: column;
-    border-bottom: 1px solid #DFE0EB ;
-    font-size: 14px;
-  }
+  /*  левый нижний столб */
 
-  .ticket p {
-    text-align: right; 
-    font-size: 14px;
+
+
+  /*  правый нижний столб */
+
+
+/* кнопки */
+  .taskButton{
+    border-radius:8px;
+    border: none;
+    font-size: 11px;
+    padding: 5px 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    line-height: 14px;
+    color: #FFFFFF;
+    font-weight: bold;
+  }
+  .tb1{
+    background: #FEC400;
+  }
+  .tb2{
+    background: #29CC97;
+  }
+  .tb3{
+    background: #F0F1F7;
     color:#9FA2B4;
   }
+
+.checkTask{
+  letter-spacing:0.2px;
+}
+
+
+
+
+
+.blockTest {
+  display: inline-flex;
+  text-align: center;
+  width: 100%;
+}
+.blockTest div {
+  flex: 10%;
+  display: inline-flex;
+  height: 50px;
+
+  padding-left: 32px;
+  padding-bottom: 18px;
+  padding-top: 20px;
+  
+  color: #252733;
+  font-size: 14px;
+  line-height: 20px;
+  height: 20px;
+  border-bottom: 1px solid #DFE0EB ;
+}
+.blockTest  {
+  flex: 10%;
+  display: inline-flex;
+  justify-content: flex-end;
+  padding-right: 32px;
+}
+
+.b01-1st{
+  width: 160px;
+  word-wrap: break-word;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+
+  letter-spacing: 0.4px;
+
+  color: #252733;
+}
+
+.b01-1st span{
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1px;
+
+  color: #9FA2B4;
+}
+
+.block03{
+  font-size: 14px;
+  color: #9FA2B4;
+}
+
+.block01 input{
+border: none;
+}
+
+.taskAdd{
+  background: #F0F1F7;
+border-radius: 8px;
+border: none;
+width: 24px;
+height: 24px;
+
+}
