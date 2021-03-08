@@ -4,6 +4,7 @@ li {list-style-type: none;}
 .page {
     display: flex;
     width: 1440px;
+    height: 1272px;
     background-color:#F7F8FC;
 }
 
@@ -12,7 +13,7 @@ li {list-style-type: none;}
 /* --------------- меню слева --------------- */
 .sidebar {
     width: 255px;
-    height: 608px;
+    height: 1272px;
     background-color:#363740;
     color: #fff;
 }
@@ -21,6 +22,7 @@ li {list-style-type: none;}
     font-size: 19px;
     color:#A4A6B3;
     align-items:center;
+    padding-bottom: 54px;
 }
 
 .logoName img{
@@ -47,9 +49,10 @@ li {list-style-type: none;}
     border-left: 2px solid #DDE2FF;
     background-color:#9FA2B4;
     opacity: 0.5;
+    cursor: pointer;
 }
 
-/*  --------------- страница 1 --------------- */
+/*  ---------- страница 1 ---------- */
               /*  заголовок сверху  */
 .header{
     display: inline-flex;
@@ -58,7 +61,7 @@ li {list-style-type: none;}
     margin: 30px 0px 30px 30px;
 }
   .part1{
-    /* display: none; */
+    display: none;
   }
 
 
@@ -100,33 +103,43 @@ li {list-style-type: none;}
     border-radius:50% ;
 }
 
-/* --------------- карты сверху --------------- */
+/* --------- карты сверху ---------- */
 
 .fonCards {
     display: flex;
-    text-align: center;
-    font-size: 19px;
-    color:#9FA2B4;
   }
-  .fonCards li{
-      font-size: 40px;
-    color:#252733;
 
-  }
+.cardText{
+  font-weight: bold;
+  font-size: 19px;  
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.4px;
+  padding-top: 24px;
+  /* color: #9FA2B4; */
+}
+
+.cardNum{
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
 .fonCards div {
-    /* flex: 0 0 auto; */
-    /* width: auto; */
     width:254px;
     height: 134px;
     margin-top: 58px;
     background: #FFFFFF;
     border-radius: 8px;
     border: 1px solid #DFE0EB;
-
   }
 
   .fonCards div:hover {
     border: 1px solid #3751FF;
+    color: #3751FF;
+    cursor: pointer;
 
   }
 
@@ -145,7 +158,6 @@ li {list-style-type: none;}
     background: #FFFFFF;
     display: inline-flex;
     text-align: center;
-
 }
 
     /*  график */
@@ -159,25 +171,34 @@ li {list-style-type: none;}
     width: 342px;
     display: inline-flex;
     justify-content: center;
-    font-size: 16px;
-    color:#9FA2B4;
-  }
-  .field2 li {
-      font-size: 24px;
-      color:#252733;
   }
 
 .field2Info {
     display: flex;
     width: 342px;
-    height: 114px;
+    height: 108.4px;
     flex-wrap: wrap;
     flex-direction: column;
     border-left: 1px solid #DFE0EB ;
     border-bottom: 1px solid #DFE0EB ;
 }
 
-/* --------------- bottom info ---------------  */
+.field2Text{
+  font-size: 16px;
+  line-height: 22px;
+  padding-top: 30px;
+  color: #9FA2B4;
+}
+
+.field2InfoRes{
+  font-weight: bold;
+  padding-top: 6px;
+  font-size: 24px;
+}
+
+
+
+/* --------- bottom info ---------  */
 
 .bottomBlockInofo {
     display: flex;
@@ -248,12 +269,23 @@ li {list-style-type: none;}
 .blockTest {
   display: inline-flex;
   text-align: center;
-  width: 100%;
+  width: 546px;
 }
+
+.blockTest  {
+  flex: 10%;
+  display: inline-flex;
+  justify-content: flex-end;
+  padding-right: 32px;
+}
+.blockTest:hover{
+  border:2px solid rgb(255, 255, 255);
+  cursor: pointer;
+  }
+
 .blockTest div {
   flex: 10%;
   display: inline-flex;
-  height: 50px;
 
   padding-left: 32px;
   padding-bottom: 18px;
@@ -261,15 +293,7 @@ li {list-style-type: none;}
   
   color: #252733;
   font-size: 14px;
-  line-height: 20px;
-  height: 20px;
   border-bottom: 1px solid #DFE0EB ;
-}
-.blockTest  {
-  flex: 10%;
-  display: inline-flex;
-  justify-content: flex-end;
-  padding-right: 32px;
 }
 
 .b01-1st{
@@ -277,28 +301,38 @@ li {list-style-type: none;}
   word-wrap: break-word;
   font-weight: bold;
   font-size: 19px;
-  line-height: 24px;
-
   letter-spacing: 0.4px;
-
   color: #252733;
+  text-align: left;
+}
+
+.b01-1st p{
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1px;
+  color: #9FA2B4;
 }
 
 .b01-1st span{
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.1px;
+  color: #252733;
 
-  color: #9FA2B4;
+}
+
+.block01 input{
+border: none;
+}
+
+.block02 {
+  text-align: right;
+  height: 20px;
 }
 
 .block03{
   font-size: 14px;
   color: #9FA2B4;
-}
-
-.block01 input{
-border: none;
 }
 
 .taskAdd{
@@ -312,7 +346,7 @@ height: 24px;
 
 
 
-                          /* страница 2 */
+                      /* страница 2 */
 .part2{
   display: none;
 }
