@@ -17,51 +17,57 @@
             <div class="logoName"><img src="/ThirdLayout/img/logo.png" alt="logo">Dashboard Kit</div>
         </div>
         
-        <div class="blockMenu">Overview</div>
-        <div class="blockMenu">Tickets</div>
-        <div class="blockMenu">Ideas</div>
-        <div class="blockMenu">Contacts</div>
-        <div class="blockMenu">Agents</div>
-        <div class="blockMenu">Articles</div>
+        <div class="blockMenu">
+            <img src="/ThirdLayout/img/sidebar/1. overview.png">Overview</div>
+        <div class="blockMenu">
+            <img src="/ThirdLayout/img/sidebar/2. tickets.png">Tickets</div>
+        <div class="blockMenu">
+            <img src="/ThirdLayout/img/sidebar/3. ideas.png">Ideas</div>
+        <div class="blockMenu">
+            <img src="/ThirdLayout/img/sidebar/4. contacts.png">Contacts</div>
+        <div class="blockMenu">
+            <img src="/ThirdLayout/img/sidebar/5. agents.png">Agents</div>
+        <div class="blockMenu">
+            <img src="/ThirdLayout/img/sidebar/6. articles.png">Articles</div>
     </div>
 
 
 
-    <div class="header">
+    <div class="header part1">
         <div class="headerBlocks">
             <div class="block">
                 <div class="blockName">Overview</div>
                 <div class="blockNa">
-                    <button class="buttonSearch">
-                        <img src="/ThirdLayout/img/top-bar/bSearch.png" alt="bSearch">
-                    </button>
-                    <button class="buttonNew">
-                        <img src="/ThirdLayout/img/top-bar/bNew.png" alt="bSearch">
-                    </button>
+                    <input type = "image" src = "/ThirdLayout/img/top-bar/bSearch.png" name = "имя кнопки" value = "Значение кнопки" width="13" height="14" />
+
+                    <input type = "image" src = "/ThirdLayout/img/top-bar/bNew.png" name = "имя кнопки" value = "Значение кнопки" width="13" height="16"/>
+
+                    <img class="devided" src="/ThirdLayout/img/header/divider/line/divider.png" alt="" height="21">
+
                     <li class="userName">Jones Ferdinand</li>
                     <img class='userAvatar' src="/ThirdLayout/img/top-bar/user-avatar.png" alt="" width="44" height="44">
               </div>
-        </div>
+            </div>
 
 
 
         
 
 <!-- -----карты выбора ----- -->
-        <div class="fonCards">
-            <div class="card">Unresolved
-                <li class="cardLi1">60</li>
+            <div  iv class="fonCards">
+                <div class="card">Unresolved
+                    <li class="cardLi1">60</li>
+                </div>
+                <div class="card">Overdue
+                    <li class="cardLi2">16</li>
+                </div>
+                <div class="card">Open
+                    <li class="cardLi3">43</li>
+                </div>
+                <div class="card">In hold
+                    <li class="cardLi4">64</li>
+                </div>
             </div>
-            <div class="card">Overdue
-                <li class="cardLi2">16</li>
-            </div>
-            <div class="card">Open
-                <li class="cardLi3">43</li>
-            </div>
-            <div class="card">In hold
-                <li class="cardLi4">64</li>
-            </div>
-          </div>
           
 
 <!-- ----- график ----- -->
@@ -94,111 +100,202 @@
 
 <!-- ----- bottom info ----- -->
 
-<div class="bottomBlockInofo">
-    <div class="InfoPos">
-        <div class="unresolvedTickets">
+            <div class="bottomBlockInofo">
+                <div class="InfoPos">
+                    <div class="unresolvedTickets">
 
 
 
-            <div class="blockTest">
-                <div class="block01">
-                    <li class="b01-1st">Unresolved tickets Group: <span>Support</span></li> 
+                        <div class="blockTest">
+                            <div class="block01">
+                                <li class="b01-1st">Unresolved tickets Group: <span>Support</span></li> 
+                                
+                            </div>
+                            <div class="block02">
+                                <li class="block03"><a href="">View details</a></li>
+                            </div>
+                        </div>
+                        <div class="blockTest">
+                            <div class="block01">Waiting on Feature Request</div>
+                            <div class="block02">
+                                <li class="block03">4238</li>
+                            </div>
+                        </div>
+                        <div class="blockTest">
+                            <div class="block01">Awaiting Customer Response</div>
+                            <div class="block02">
+                                <li class="block03">1005</li>
+                            </div>
+                        </div>
+                        <div class="blockTest">
+                            <div class="block01">Awaiting Developer Fix</div>
+                            <div class="block02">
+                                <li class="block03">914</li>
+                            </div>
+                        </div>
+                        <div class="blockTest">
+                            <div class="block01">Pending</div>
+                            <div class="block02">
+                                <li class="block03">281</li>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="rightInfos InfoPos">
+
+                    <div class="blockTest">
+                        <div class="block01">
+                            <li class="b01-1st">Tasks<span>Today</span></li> 
+                            
+                        </div>
+                        <div class="block02">
+                            <li class="block03"><a href="">View details</a></li>
+                        </div>
+                    </div>
+
+                    <div class="blockTest ">
+                        <div class="block01 b01-input"><input type="text" placeholder="Create new task"></div>
+                        <div class="block02">
+                            <li class="block03"><button class="taskAdd tb3">+</button></li>
+                        </div>
+                    </div>
+
+                    <div class="blockTest">
+                        <div class="block01">
+                                <input class="custom-radio" type="radio" id="c1" name="checkTask" value="">
+                                <label class="checkTask" for="c1">Finish ticket update</label>
+                        </div>
+                        <div class="block02">
+                            <li class="block03"><button class="taskButton tb1">Urgent</button></li>
+                        </div>
+                    </div>
+
+                    <div class="blockTest">
+                        <div class="block01">
+                                <input class="custom-radio" type="radio" id="c2" name="checkTask" value="">
+                                <label class="checkTask" for="c2">Create new ticket example</label>
+                        </div>
+                        <div class="block02">
+                            <li class="block03"><button class="taskButton tb2">New</button></li>
+                        </div>
+                    </div>
                     
-                </div>
-                <div class="block02">
-                    <li class="block03"><a href="">View details</a></li>
-                </div>
-            </div>
-            <div class="blockTest">
-                <div class="block01">Waiting on Feature Request</div>
-                <div class="block02">
-                    <li class="block03">4238</li>
-                </div>
-            </div>
-            <div class="blockTest">
-                <div class="block01">Awaiting Customer Response</div>
-                <div class="block02">
-                    <li class="block03">1005</li>
-                </div>
-            </div>
-            <div class="blockTest">
-                <div class="block01">Awaiting Developer Fix</div>
-                <div class="block02">
-                    <li class="block03">914</li>
-                </div>
-            </div>
-            <div class="blockTest">
-                <div class="block01">Pending</div>
-                <div class="block02">
-                    <li class="block03">281</li>
-                </div>
-            </div>
+                    <div class="blockTest">
+                        <div class="block01">
+                                <input class="custom-radio" type="radio" id="c3" name="checkTask" value="">
+                                <label class="checkTask" for="c3">Update ticket report</label>
+                        </div>
+                        <div class="block02">
+                            <li class="block03"><button class="taskButton tb3">Default</button></li>
+                        </div>
+                    </div>
 
 
+                </div>
+
+            </div>
         </div>
     </div>
 
-    <div class="rightInfos InfoPos">
+    <!-- ---------------------- страница 2  ---------------------- -->
 
-        <div class="blockTest">
-            <div class="block01">
-                <li class="b01-1st">Tasks<span>Today</span></li> 
-                
+    <div class="header part2">
+        <div class="headerBlocks">
+            <div class="block">
+                <div class="blockName">Tickets</div>
+                <div class="blockNa">
+                    <input type = "image" src = "/ThirdLayout/img/top-bar/bSearch.png" name = "имя кнопки" value = "Значение кнопки" width="13" height="14" />
+
+                    <input type = "image" src = "/ThirdLayout/img/top-bar/bNew.png" name = "имя кнопки" value = "Значение кнопки" width="13" height="16"/>
+
+                    <img class="devided" src="/ThirdLayout/img/header/divider/line/divider.png" alt="" height="21">
+
+                    <li class="userName">Jones Ferdinand</li>
+                    <img class='userAvatar' src="/ThirdLayout/img/top-bar/user-avatar.png" alt="" width="44" height="44">
+              </div>
             </div>
-            <div class="block02">
-                <li class="block03"><a href="">View details</a></li>
+          
+
+
+<!-- ----- block info ----- -->
+
+            <div class="block1">
+                <div class="blockInfo">
+                    <div class="allTickets">
+
+
+                        <div class="block1Test">
+                                <div class="string1"><li class="ticketDetail">Ticket details</li>
+                                
+                                </div>
+                                <div class="string1"><li class="customerName">Customer name</li> </div>
+                                <div class="string1"><li class="colDate">Date</li> </div>
+                                <div class="string1"><li class="">Priority</li></div>
+                                <div class="string1"><li class="colMenu">---</li></div>
+                        </div>
+                        
+
+                        <div class="block1Test">
+                            <div class="ticketDetails">
+                                <img class='userAvatar' src="/ThirdLayout/img/avatar/m 5.png" alt="" width="44" height="44">
+                                <li class="ticketDetail">Contact Email not Linked<p>Updated 1 day ago</p></li>
+                            </div>
+                            <div class="customerName"><li class="customerName">Tom Cruise<p>on 24.05.2019</p></li> </div>
+                            <div class="colDate"><li class="colDate">May 26, 2019<p>6:30 PM</p></li></div>
+                            <div class="priority"><li class="statusIcon high">High</li></div>
+                            <div class="colMenu">
+                                <img class='' src="/ThirdLayout/img/ticket/icon/more - vertical.png" alt="" width="24" height="24">
+                            </div>
+                        </div>
+
+                        <div class="block1Test">
+                            <div class="ticketDetails">
+                                <img class='userAvatar' src="/ThirdLayout/img/avatar/w 5.png" alt="" width="44" height="44">
+                                <li class="ticketDetail">Adding Images to Featured Posts<p>Updated 1 day ago</p></li></div>
+                            <div class="customerName"><li class="customerName">Matt Damon<p>on 24.05.2019</p></li></div>
+                            <div class="colDate"><li class="colDate">May 26, 2019<p>8:00 PM</p></li></div>
+                            <div class="priority"><li class="statusIcon low">low</li></div>
+                            <div class="colMenu">
+                                <img class='' src="/ThirdLayout/img/ticket/icon/more - vertical.png" alt="" width="24" height="24">
+                            </div>
+                        </div>
+
+                        <div class="block1Test">
+                            <div class="ticketDetails">
+                                <img class='userAvatar' src="/ThirdLayout/img/avatar/w 3.png" alt="" width="44" height="44">
+                                <li class="ticketDetail">When will I be charged this month?<p>Updated 1 day ago</p></li></div>
+                            <div class="customerName"><li class="customerName">Robert Downey<p>on 24.05.2019</p></li></div>
+                            <div class="colDate"><li class="colDate">May 26, 2019<p>7:30 PM</p></li></div>
+                            <div class="priority"><li class="statusIcon high">High</li></div>
+                            <div class="colMenu">
+                                <img class='' src="/ThirdLayout/img/ticket/icon/more - vertical.png" alt="" width="24" height="24">
+                            </div>
+                        </div>
+
+                        <div class="block1Test">
+                            <div class="ticketDetails">
+                                <img class='userAvatar' src="/ThirdLayout/img/avatar/m 7.png" alt="" width="44" height="44">
+                                <li class="ticketDetail">Payment not going through<p>Updated 1 day ago</p></li></div>
+                            <div class="customerName"><li class="customerName">Christian Bale<p>on 24.05.2019</p></li></div>
+                            <div class="colDate"><li class="colDate">May 26, 2019<p>5:00 PM</p></li></div>
+                            <div class="priority"><li class="statusIcon normal">Normal</li></div>
+                            <div class="colMenu">
+                                <img class='' src="/ThirdLayout/img/ticket/icon/more - vertical.png" alt="" width="24" height="24">
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
             </div>
+
+            
         </div>
-
-        <div class="blockTest ">
-            <div class="block01 b01-input"><input type="text" placeholder="Create new task"></div>
-            <div class="block02">
-                <li class="block03"><button class="taskAdd tb3">+</button></li>
-            </div>
-        </div>
-
-        <div class="blockTest">
-            <div class="block01">
-                    <input class="custom-radio" type="radio" id="c1" name="checkTask" value="">
-                    <label class="checkTask" for="c1">Finish ticket update</label>
-            </div>
-            <div class="block02">
-                <li class="block03"><button class="taskButton tb1">Urgent</button></li>
-            </div>
-        </div>
-
-        <div class="blockTest">
-            <div class="block01">
-                    <input class="custom-radio" type="radio" id="c2" name="checkTask" value="">
-                    <label class="checkTask" for="c2">Create new ticket example</label>
-            </div>
-            <div class="block02">
-                <li class="block03"><button class="taskButton tb2">New</button></li>
-            </div>
-        </div>
-        
-        <div class="blockTest">
-            <div class="block01">
-                    <input class="custom-radio" type="radio" id="c3" name="checkTask" value="">
-                    <label class="checkTask" for="c3">Update ticket report</label>
-            </div>
-            <div class="block02">
-                <li class="block03"><button class="taskButton tb3">Default</button></li>
-            </div>
-        </div>
-
-
     </div>
-
-  </div>
-    </div>
-
-
-
-
-
 </div>
-
          
 
     <script src="script.js"></script>

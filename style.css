@@ -20,10 +20,15 @@ li {list-style-type: none;}
 .logoName{
     font-size: 19px;
     color:#A4A6B3;
-    padding: 41px;
     align-items:center;
 }
 
+.logoName img{
+  padding-left:32px;
+  padding-top: 37px;
+  padding-right: 12px;
+
+}
 
 .blockMenu{
     color: #A4A6B3;
@@ -31,23 +36,30 @@ li {list-style-type: none;}
     font-size: 16px;
 }
 
+.blockMenu img{
+  padding-right:24px;
+  padding-left: 10px;
+
+}
+
 .blockMenu:hover{
     color: #DDE2FF;
     border-left: 2px solid #DDE2FF;
     background-color:#9FA2B4;
     opacity: 0.5;
-
 }
 
-
-/* --------------- заголовок сверху --------------- */
+/*  --------------- страница 1 --------------- */
+              /*  заголовок сверху  */
 .header{
     display: inline-flex;
     width:1185px;
     height: 1234px;
     margin: 30px 0px 30px 30px;
-
 }
+  .part1{
+    /* display: none; */
+  }
 
 
 .block {
@@ -59,22 +71,24 @@ li {list-style-type: none;}
     flex: 10%;
     display: inline-flex;
     height: 50px;
-    background: yellow;
   }
   .block div:nth-child(2) {
     flex: 10%;
     display: inline-flex;
-    background: orange;
     justify-content: flex-end;
   }
 
 
 .blockName{
-    color: #252733;
-    font-size: 24px;
-    background: rgb(225, 151, 151);
-    width: 1122px;
-    height: 44px;
+  color: #252733;
+  font-size: 24px;
+  width: 1122px;
+  height: 44px;
+
+  font-weight: bold;
+  line-height: 30px;
+  letter-spacing: 0.3px;
+
 }
   
 .userName{
@@ -294,4 +308,157 @@ border: none;
 width: 24px;
 height: 24px;
 
+}
+
+
+
+                          /* страница 2 */
+.part2{
+  display: none;
+}
+
+
+.blockNa input {
+  margin-left: 28px;
+}
+
+.devided{
+  margin: 0px 32px ;
+}
+
+.block1 {
+  display: flex;
+}
+
+.blockInfo {
+  width:1122px;
+  height: 942px;
+  margin-top: 30px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  border: 1px solid #DFE0EB;
+  color: #252733;
+  font-size: 19px;
+  text-align: left; 
+  
+}
+
+.block1Test {
+  display: inline-flex;
+  /* width: 100%;   */
+  width: 1120px;
+  flex: 10%;
+  font-size: 14px;
+
+}
+/* линуем табл */
+.block1Test div {
+  flex: 10%;
+  display: inline-flex;
+
+  padding-left: 24px;
+  padding-bottom: 18px;
+  padding-top: 24px;
+  
+  color: #252733;
+  line-height: 20px;
+  height: 44px;
+  border-bottom: 1px solid #DFE0EB ;
+}
+
+.block1Test p{
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1px;
+  color: #C5C7CD;
+}
+
+
+/* 1 столб */
+.ticketDetail {
+  width: 440px;
+  height: 18px;
+  text-align: left;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #252733;
+  padding-left: 24px;
+
+}
+
+
+.string1{
+}
+
+.string1 li{
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  color: #9FA2B4;
+  padding-left: 24px;
+
+}
+
+/* 2 столб */
+.customerName{
+  width: 208px;
+  height: 18px;
+  text-align: left;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #252733;
+  
+
+}
+
+/* 3 столб */
+.colDate{
+  width: 140px;
+  height: 18px;
+  text-align: left;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #252733;
+}
+
+/* 4 столб */
+.priority{
+  width: 104px;
+  height: 18px;
+  text-align: left;
+}
+
+/* 5 столб */
+
+.colMenu{
+  height: 5px;
+  text-align: left;
+}
+
+.statusIcon{
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border-radius: 100px;
+  height: 24px;
+  width: 52px;
+
+}
+
+.low{
+  background: #FEC400;
+}
+
+.normal{
+  background: #29CC97;
+}
+
+.high{
+  background: #F12B2C;  
 }
