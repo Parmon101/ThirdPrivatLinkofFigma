@@ -61,7 +61,7 @@ li {list-style-type: none;}
     margin: 30px 0px 30px 30px;
 }
   .part1{
-    display: none;
+    display: block;
   }
 
 

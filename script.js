@@ -1,21 +1,25 @@
 "use strict"
 
 let buttons = document.querySelectorAll('.blockMenu');
-
-for (let button of buttons) {
-    button.addEventListener('click', function(e){
-        
-        if (document.querySelector('.part1').style.display="none") {
-            document.querySelector('.part1').style.display="block" || document.querySelector('.part2').style.display=="none"
-        } 
-
-        if (document.querySelector('.part1').style.display="block") {
-            document.querySelector('.part1').style.display="none"
-        } 
-
-        console.log(button);
-    }
-    )
-}
+let blockOverview = document.querySelector('#Overview');
+let blockTickets = document.querySelector('#Tickets')
 
 
+let part1 = document.getElementById("part1");
+let part2 = document.getElementById("part2");
+
+
+blockOverview.addEventListener('click', function(e) {
+
+    part1.style.display = 'block'
+    part2.style.display = 'none'
+
+})
+
+
+blockTickets.addEventListener('click', function(e) {
+
+    part2.style.display = 'block'
+    part1.style.display = 'none'
+
+})
