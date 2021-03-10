@@ -46,10 +46,18 @@ li {list-style-type: none;}
 
 .blockMenu:hover{
     color: #DDE2FF;
-    border-left: 2px solid #DDE2FF;
+    border-left: 3px solid #fff;
     background-color:#9FA2B4;
     opacity: 0.5;
     cursor: pointer;
+}
+
+.blockMenuHover{
+  color: #DDE2FF;
+  border-left: 3px solid #fff;
+  background-color:#9FA2B4;
+  opacity: 0.5;
+  cursor: pointer;
 }
 
 /*  ---------- страница 1 ---------- */
