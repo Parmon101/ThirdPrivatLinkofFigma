@@ -1,5 +1,11 @@
 body {margin: 0;padding: 0;}
 li {list-style-type: none;}
+a{
+  font-weight: 600;
+  text-decoration: none;
+  line-height: 20px;
+  color: #3751FF;
+}
 
 .page {
     display: flex;
@@ -228,20 +234,9 @@ li {list-style-type: none;}
     text-align: left; 
   }
 
-
-
-
   .InfoPos + .InfoPos {
   margin-left: 30px;
   }
-
-
-  /*  левый нижний столб */
-
-
-
-  /*  правый нижний столб */
-
 
 /* кнопки */
   .taskButton{
@@ -274,34 +269,10 @@ li {list-style-type: none;}
 
 
 
-.blockTest {
-  display: inline-flex;
-  text-align: center;
-  width: 546px;
-}
 
-.blockTest  {
-  flex: 10%;
-  display: inline-flex;
-  justify-content: flex-end;
-  padding-right: 32px;
-}
-.blockTest:hover{
-  border:2px solid rgb(255, 255, 255);
-  cursor: pointer;
-  }
 
-.blockTest div {
-  flex: 10%;
-  display: inline-flex;
-
-  padding-left: 32px;
-  padding-bottom: 18px;
-  padding-top: 20px;
-  
-  color: #252733;
-  font-size: 14px;
-  border-bottom: 1px solid #DFE0EB ;
+.unresolvedTickets{
+  padding: 1.7rem 2.2rem;
 }
 
 .b01-1st{
@@ -329,18 +300,25 @@ li {list-style-type: none;}
 
 }
 
-.block01 input{
-border: none;
+
+.blockTest {
+  min-height: 3.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.block01 {
+  flex-grow: 1;
 }
 
 .block02 {
-  text-align: right;
-  height: 20px;
+  color: #9fa2b4;
 }
 
-.block03{
-  font-size: 14px;
-  color: #9FA2B4;
+
+.divided{
+  border: 1px solid #DFE0EB;
+  margin: 0 -2.2rem;
 }
 
 .taskAdd{
