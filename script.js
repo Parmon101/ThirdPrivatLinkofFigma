@@ -2,8 +2,6 @@
 
 
 // настройка переключения странице в левом меню
-let buttons = document.querySelectorAll('.blockMenu');
-
 let blockOverview = document.querySelector('#Overview');
 let blockTickets = document.querySelector('#Tickets')
 
@@ -19,7 +17,6 @@ blockOverview.addEventListener('click', function(e) {
         blockOverview.classList.add('blockMenuHover') ||
         blockTickets.classList.remove('blockMenuHover')
     }
-
 })
 
 blockTickets.addEventListener('click', function(e) {
@@ -32,4 +29,38 @@ blockTickets.addEventListener('click', function(e) {
         blockOverview.classList.remove('blockMenuHover')
     }
 
+})
+
+// выделение краточки
+// let cards = document.querySelectorAll('.fonCards div');
+
+
+// for (let card of cards) {
+
+//     card.addEventListener('click', function() {
+//         if (!card.classList.contains('activeCard'))
+//         {card.classList.add('activeCard')}
+//         else {card.classList.remove('activeCard')}
+//     }) 
+// }
+
+let cards = document.querySelectorAll('.fonCards div');
+
+
+for (let card of cards) {
+    card.addEventListener('click', function() {
+        if (!card.classList.contains('activeCard'))
+        {card.classList.add('activeCard')}
+        else {card.classList.remove('activeCard')}
+        
+        // см id выбранного 
+
+        // console.log(card.getAttribute('data-id-card'))
+    }) 
+}
+
+
+let asd = document.querySelector('.asd')
+asd.addEventListener('click', function(){
+    console.log(`${cards}`);
 })

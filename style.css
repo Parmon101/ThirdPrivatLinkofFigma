@@ -5,6 +5,7 @@ a{
   text-decoration: none;
   line-height: 20px;
   color: #3751FF;
+  
 }
 
 .page {
@@ -154,7 +155,12 @@ a{
     border: 1px solid #3751FF;
     color: #3751FF;
     cursor: pointer;
+  }
 
+  .activeCard{
+    border: 12px solid #3751FF;
+    color: #3751FF;
+    
   }
 
 .card + .card{
