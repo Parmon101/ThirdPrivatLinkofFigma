@@ -44,23 +44,45 @@ blockTickets.addEventListener('click', function(e) {
 //     }) 
 // }
 
-let cards = document.querySelectorAll('.fonCards div');
+// let cards = document.querySelectorAll('.fonCards div');
+// let cards_array = Array.prototype.slice.call(cards);
 
+// for (let card of cards) {
+//     card.addEventListener('click', function() {
+
+//         cards_array.forEach(element => {
+//             element.classList.remove('activeCard')
+//         });
+
+//         if (!card.classList.contains('activeCard'))
+//         {card.classList.add('activeCard')}
+//         else {card.classList.remove('activeCard')}
+
+//     }) 
+// }
+
+
+
+let cards = document.querySelectorAll('.fonCards div');
 
 for (let card of cards) {
     card.addEventListener('click', function() {
+        
+        cards.forEach(element => {
+            element.classList.remove('activeCard')
+        });
+
         if (!card.classList.contains('activeCard'))
         {card.classList.add('activeCard')}
-        else {card.classList.remove('activeCard')}
-        
-        // см id выбранного 
 
-        // console.log(card.getAttribute('data-id-card'))
     }) 
 }
 
 
-let asd = document.querySelector('.asd')
-asd.addEventListener('click', function(){
-    console.log(`${cards}`);
-})
+
+
+// view detaiks и view all
+// let asd = document.querySelector('.asd')
+// asd.addEventListener('click', function(){
+//     console.log(`${cards}`);
+// })
