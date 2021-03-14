@@ -66,18 +66,21 @@ blockTickets.addEventListener('click', function(e) {
 let cards = document.querySelectorAll('.fonCards div');
 
 for (let card of cards) {
-    card.addEventListener('click', function() {
-        
-        cards.forEach(element => {
-            element.classList.remove('activeCard')
-        });
-
-        if (!card.classList.contains('activeCard'))
-        {card.classList.add('activeCard')}
-
-    }) 
+    card.addEventListener('click', upClass) 
 }
 
+function upClass(event){
+    
+    cards.forEach(element => {
+        element.classList.remove('activeCard')
+    });
+
+    event=event.currentTarget
+
+    if (!event.classList.contains('activeCard'))
+    {event.classList.add('activeCard')}
+
+}
 
 
 
