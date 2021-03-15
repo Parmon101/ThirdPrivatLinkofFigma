@@ -156,7 +156,7 @@ a{
   }
 
   .activeCard{
-    border: 12px solid #3751FF;
+    border: 2px solid #3751FF !important;
     color: #3751FF;
     
   }
@@ -470,6 +470,9 @@ height: 24px;
   border-radius: 100px;
   height: 24px;
   width: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
 }
 
