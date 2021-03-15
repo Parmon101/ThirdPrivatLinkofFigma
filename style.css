@@ -75,9 +75,7 @@ a{
     height: 1234px;
     margin: 30px 0px 30px 30px;
 }
-  .part1{
-    display: block;
-  }
+
 
 
 .block {
@@ -339,9 +337,7 @@ height: 24px;
 
 
                       /* страница 2 */
-.part2{
-  display: none;
-}
+
 
 
 .blockNa input {
@@ -487,4 +483,13 @@ height: 24px;
 
 .high{
   background: #F12B2C;  
+}
+
+
+
+.show{
+  display: block;
+}
+.hidden{
+  display: none;
 }

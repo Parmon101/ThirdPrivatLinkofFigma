@@ -2,66 +2,34 @@
 
 
 // настройка переключения странице в левом меню
-let blockOverview = document.querySelector('#Overview');
-let blockTickets = document.querySelector('#Tickets')
+let sideButtons = document.querySelectorAll('[data-sidebar]')
+let pages = document.querySelectorAll('[data-page]')
 
-let part1 = document.getElementById("part1");
-let part2 = document.getElementById("part2");
 
-blockOverview.addEventListener('click', function(e) {
+for (let sideButton of sideButtons) {
+    sideButton.addEventListener('click', function(e) {
 
-    part1.style.display = 'block'
-    part2.style.display = 'none'
+        // при клике, все страницы скрываются
+        pages.forEach(element => {
+        element.classList.add('hidden')});
 
-    if (part1.style.display = 'block') {
-        blockOverview.classList.add('blockMenuHover') ||
-        blockTickets.classList.remove('blockMenuHover')
-    }
-})
+        // получаем имя кнопки сайдбара
+        let field = this.getAttribute('data-sidebar');
 
-blockTickets.addEventListener('click', function(e) {
+        // ищем нужную страницу по имению (взятого из field) кнопки сайдбара
+        let page = document.querySelector(`[data-page=${field}]`)
 
-    part2.style.display = 'block'
-    part1.style.display = 'none'
+        // проверяем, если скрыта\hidden и добавляем показ\show
+        if (page.classList.contains('hidden'))
+        {page.classList.remove('hidden') ||page.classList.add('show') }
 
-    if (part2.style.display = 'block') {
-        blockTickets.classList.add('blockMenuHover')
-        blockOverview.classList.remove('blockMenuHover')
-    }
+    })
+}
 
-})
+
+
 
 // выделение краточки
-// let cards = document.querySelectorAll('.fonCards div');
-
-
-// for (let card of cards) {
-
-//     card.addEventListener('click', function() {
-//         if (!card.classList.contains('activeCard'))
-//         {card.classList.add('activeCard')}
-//         else {card.classList.remove('activeCard')}
-//     }) 
-// }
-
-// let cards = document.querySelectorAll('.fonCards div');
-// let cards_array = Array.prototype.slice.call(cards);
-
-// for (let card of cards) {
-//     card.addEventListener('click', function() {
-
-//         cards_array.forEach(element => {
-//             element.classList.remove('activeCard')
-//         });
-
-//         if (!card.classList.contains('activeCard'))
-//         {card.classList.add('activeCard')}
-//         else {card.classList.remove('activeCard')}
-
-//     }) 
-// }
-
-
 
 let cards = document.querySelectorAll('.fonCards div');
 
@@ -81,6 +49,8 @@ function upClass(event){
     {event.classList.add('activeCard')}
 
 }
+
+
 
 
 
