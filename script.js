@@ -62,42 +62,32 @@ function upClass(event){
     if (!selectCard.classList.contains('activeCard'))
     {selectCard.classList.add('activeCard')}
 
-    let block = selectCard.getAttribute('data-id-card');
+    let block = event.currentTarget.getAttribute('data-nameCard');
 
-    document.querySelectorAll('[data-value]').forEach(element => {
-
-
-        let name = element.getAttribute('data-value');
-        let value = element.textContent
-
-
-        // value.innerHTML = `${name}[${value}]`
-
-        // value.innerHTML = Overdue[AvFirstRes]
-
-        // value.innerHTML =  12412;
-
-        value.innerHTML = Open.Tasks
-
-        console.log(value);
-
-
-    //    console.log(`block ${block} : name ${name} =  ${value}`);
-    
-});
-
-// let fifi = document.querySelector('[data-value]')
-// value.innerHTML = `${block}.${name}`
-
-
-// let fifi = document.querySelector('[data-value]')
-// fifi.innerHTML = Open.Tasks
-
+    if (block === 'Unresolved') {
+        for(let value of document.querySelectorAll('[data-value]')){
+            let fieldValue = value.getAttribute('data-value')
+        value.innerHTML = Unresolved[fieldValue]
+        }
+    } else if (block === 'Overdue') {
+        for(let value of document.querySelectorAll('[data-value]')){
+            let fieldValue = value.getAttribute('data-value')
+        value.innerHTML = Overdue[fieldValue]
+        }
+    } else if (block === 'Open') {
+        for(let value of document.querySelectorAll('[data-value]')){
+            let fieldValue = value.getAttribute('data-value')
+        value.innerHTML = Open[fieldValue]
+        }
+    } else if (block === 'OnHold') {
+        for(let value of document.querySelectorAll('[data-value]')){
+            let fieldValue = value.getAttribute('data-value')
+        value.innerHTML = OnHold[fieldValue]
+        }
+    }
 }
 
-
-
-let Unresolved = {
+const Unresolved = {
     Tasks: 500,
     Clients: 250,
     AvFirstRes: '48m',
@@ -105,8 +95,7 @@ let Unresolved = {
     ResolutionWithSLA:  '50%',
     }
 
-
-let Overdue = {
+const Overdue = {
     Tasks: 449,
     Clients: 426,
     AvFirstRes: '33m',
@@ -114,7 +103,7 @@ let Overdue = {
     ResolutionWithSLA:  '94%',
     }
 
-let Open = {
+const Open = {
     Tasks: 300,
     Clients: 257,
     AvFirstRes: '1d 5h 18m',
@@ -122,7 +111,7 @@ let Open = {
     ResolutionWithSLA:  '58%',
     }
 
-let OnHold = {
+const OnHold = {
     Tasks: 0,
     Clients: 0,
     AvFirstRes: 'Unknown',
