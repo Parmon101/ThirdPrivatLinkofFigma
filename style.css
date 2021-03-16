@@ -10,8 +10,8 @@ a{
 
 .page {
     display: flex;
-    width: 1440px;
-    height: 1272px;
+    width: 100%;
+    height: 100%;
     background-color:#F7F8FC;
 }
 
@@ -19,8 +19,8 @@ a{
 
 /* --------------- меню слева --------------- */
 .sidebar {
-    width: 255px;
-    height: 1272px;
+    width: 17%;
+    height: 100%;
     background-color:#363740;
     color: #fff;
 }

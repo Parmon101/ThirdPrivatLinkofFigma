@@ -62,31 +62,25 @@ function upClass(event){
     if (!selectCard.classList.contains('activeCard'))
     {selectCard.classList.add('activeCard')}
 
-    let block = event.currentTarget.getAttribute('data-nameCard');
+    const block = event.currentTarget.getAttribute('data-nameCard');
 
-    if (block === 'Unresolved') {
-        for(let value of document.querySelectorAll('[data-value]')){
-            let fieldValue = value.getAttribute('data-value')
-        value.innerHTML = Unresolved[fieldValue]
-        }
-    } else if (block === 'Overdue') {
-        for(let value of document.querySelectorAll('[data-value]')){
-            let fieldValue = value.getAttribute('data-value')
-        value.innerHTML = Overdue[fieldValue]
-        }
-    } else if (block === 'Open') {
-        for(let value of document.querySelectorAll('[data-value]')){
-            let fieldValue = value.getAttribute('data-value')
-        value.innerHTML = Open[fieldValue]
-        }
-    } else if (block === 'OnHold') {
-        for(let value of document.querySelectorAll('[data-value]')){
-            let fieldValue = value.getAttribute('data-value')
-        value.innerHTML = OnHold[fieldValue]
-        }
-    }
+    const myData = {
+        Unresolved,
+        Overdue,
+        Open,
+        OnHold,
+    };
+
+    for(const value of document.querySelectorAll('[data-value]')){
+        const fieldValue = value.getAttribute('data-value')
+        value.innerHTML = myData[block][fieldValue]
+    };
+
 }
 
+    
+
+// объекты с данными
 const Unresolved = {
     Tasks: 500,
     Clients: 250,
